@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import kr.ac.knu.ml.db.DBConnection;
 import kr.ac.knu.ml.pathinfo.unit.PathInfoOrgan;
+import kr.ac.knu.ml.pathinfo.unit.PathInfoOrganNormalize;
 
 public class PathInfoOrganRepository implements Serializable {
 	/**

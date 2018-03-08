@@ -60,8 +60,8 @@ public class SDocExtractor extends DocExtractor {
 		SReportWriter writer = new SReportWriter();
 		writer.write(outputFileName + ".xlsx", sdocs);
 
-		// writer = new SReportWriter( "xml" );
-		// writer.write( outputFileName + ".xml", sdocs );
+		 writer = new SReportWriter( "xml" );
+		 writer.write( outputFileName + ".xml", sdocs );
 
 		long end = System.nanoTime();
 		System.out.println("Writing time : " + (end - start) / Math.pow(10, 9)

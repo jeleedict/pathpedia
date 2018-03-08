@@ -109,17 +109,17 @@ public class BiomedicalAnalyzer implements Serializable {
 				processingBioMarker(marker);
 			}
 		} catch (NullPointerException e) {
-			sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-					+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("NullPointerException \t Pathologic_Diagnosis : "
+					+ pa.getDiagnosisName() + ", Pathology_ID : " + pathologyid + "\n");
 		} catch (StringIndexOutOfBoundsException e) {
-			sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-					+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+					+ pa.getDiagnosisName() + ", Pathology_ID : " + pathologyid + "\n");
 		} catch (IllegalStateException e) {
-			sb.append("IllegalStateException \t 병리학적 진단(Pathologic_Diagnosis) : "
-					+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("IllegalStateException \t Pathologic_Diagnosis : "
+					+ pa.getDiagnosisName() + ", Pathology_ID : " + pathologyid + "\n");
 		} catch (SQLException e) {
-			sb.append("SQLException \t 병리학적 진단(Pathologic_Diagnosis) : " + pa.getDiagnosisName()
-					+ ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("SQLException \t Pathologic_Diagnosis : " + pa.getDiagnosisName()
+					+ ", Pathology_ID : " + pathologyid + "\n");
 		}
 	}
 
@@ -134,13 +134,13 @@ public class BiomedicalAnalyzer implements Serializable {
 			}
 
 		} catch (NullPointerException e) {
-			sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : " + pathologyid + "\n");
+			sb.append("NullPointerException \t Pathologic_Diagnosis : " + pathologyid + "\n");
 		} catch (IllegalStateException e) {
-			sb.append("IllegalStateException \t 병리학적 진단(Pathologic_Diagnosis) : "
-					+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("IllegalStateException \t Pathologic_Diagnosis : "
+					+ ma.getDiagnosisName() + ", Pathology_ID : " + pathologyid + "\n");
 		} catch (SQLException e) {
-			sb.append("SQLException \t 병리학적 진단(Pathologic_Diagnosis) : " + ma.getDiagnosisName()
-					+ ", 병리번호(Pathology_ID) : " + pathologyid + "\n");
+			sb.append("SQLException \t Pathologic_Diagnosis : " + ma.getDiagnosisName()
+					+ ", Pathology_ID : " + pathologyid + "\n");
 		}
 	}
 
@@ -186,12 +186,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					pa.setSlides(ps.parseSlides(pa.getDiagnosisName(),
 							pa.getSurgeonDocuments()));
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -201,12 +201,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					ma.setSlides(ps.parseSlides(ma.getDiagnosisName(),
 							ma.getSurgeonDocuments()));
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -238,12 +238,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					pa.setSlides(ps.parseSlides(pa.getDiagnosisName(),
 							pa.getSurgeonDocuments()));
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -253,12 +253,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					ma.setSlides(ps.parseSlides(ma.getDiagnosisName(),
 							ma.getSurgeonDocuments()));
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -299,12 +299,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					}
 					pa.setIsAllSurgeonDocument(flag);
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ pa.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ pa.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -324,12 +324,12 @@ public class BiomedicalAnalyzer implements Serializable {
 					}
 					ma.setIsAllSurgeonDocument(flag);
 				} catch (NullPointerException e) {
-					sb.append("NullPointerException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("NullPointerException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				} catch (StringIndexOutOfBoundsException e) {
-					sb.append("StringIndexOutOfBoundsException \t 병리학적 진단(Pathologic_Diagnosis) : "
-							+ ma.getDiagnosisName() + ", 병리번호(Pathology_ID) : "
+					sb.append("StringIndexOutOfBoundsException \t Pathologic_Diagnosis : "
+							+ ma.getDiagnosisName() + ", Pathology_ID : "
 							+ idoc.getPathologyID() + "\n");
 				}
 			}
@@ -510,7 +510,7 @@ public class BiomedicalAnalyzer implements Serializable {
 					System.out.println(sdoc.getPathologyID());
 			} catch (ArrayIndexOutOfBoundsException e) {
 				sdoc.addErrorStr("errors during converting text of microscopic findings to tree-based structure");
-				sb.append("ArrayIndexOutOfBoundsException , 병리번호(Pathology_ID) : "
+				sb.append("ArrayIndexOutOfBoundsException , Pathology_ID : "
 						+ sdoc.getPathologyID() + "\n");
 			}
 		}
@@ -681,7 +681,7 @@ public class BiomedicalAnalyzer implements Serializable {
 				}
 			} catch (StringIndexOutOfBoundsException e) {
 				sdoc.addErrorStr("MICRO (.) statement has errors");
-				sb.append("MICRO (.)statement has errors. 병리번호(Pathology_ID) : "
+				sb.append("MICRO (.)statement has errors. Pathology_ID : "
 						+ sdoc.getPathologyID() + "\n");
 			} catch (NullPointerException e) {
 				sdoc.setErrorStr("There was no identifier like 'DIAGNOSIS:'.");
@@ -1133,7 +1133,7 @@ public class BiomedicalAnalyzer implements Serializable {
 		}
 
 		// 수정해야할 것!
-		ArrayList<String> organs = pionr.getOrganNames();
+		ArrayList<String> organs = pionr.getOrganNamesFromDB();
 		ArrayList<String> organsWithLoation = new ArrayList<String>();
 		for (String organ : organs) {
 			organsWithLoation.add("in " + organ.toLowerCase());
@@ -1378,7 +1378,7 @@ public class BiomedicalAnalyzer implements Serializable {
 					System.out.println(csdoc.getPathologyID());
 			} catch (ArrayIndexOutOfBoundsException e) {
 				csdoc.addErrorStr("현미경 관찰 Text를 트리로 변환하는 도중 에러가 발생");
-				sb.append("ArrayIndexOutOfBoundsException , 병리번호(Pathology_ID) : "
+				sb.append("ArrayIndexOutOfBoundsException , Pathology_ID : "
 						+ csdoc.getPathologyID() + "\n");
 			}
 		}
@@ -1509,7 +1509,7 @@ public class BiomedicalAnalyzer implements Serializable {
 				}
 			} catch (StringIndexOutOfBoundsException e) {
 				csdoc.addErrorStr("MICRO (.)이 잘못 작성되어 있음");
-				sb.append("MICRO (.)이 잘못 작성되어 있음. 병리번호(Pathology_ID) : "
+				sb.append("MICRO (.)이 잘못 작성되어 있음. Pathology_ID : "
 						+ csdoc.getPathologyID() + "\n");
 			} catch (NullPointerException e) {
 				csdoc.setErrorStr("DIAGNOSIS: 또는 이와 준하는 식별자가 존재하지 않음.");

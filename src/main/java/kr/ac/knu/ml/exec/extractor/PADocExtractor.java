@@ -57,7 +57,7 @@ public class PADocExtractor extends DocExtractor {
 		long start = System.nanoTime();
 		System.out.println("Write '" + outputFileName + "'");
 		PAReportWriter writeExcel = new PAReportWriter();
-		writeExcel.write(outputFileName, idocs);
+		writeExcel.write(outputFileName + ".xlsx", idocs);
 		long end = System.nanoTime();
 		System.out.println("Writing time : " + (end - start) / Math.pow(10, 9)
 				+ " second");

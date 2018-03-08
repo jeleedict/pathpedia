@@ -33,7 +33,7 @@ public class ImmunityDocumentParser {
 	
 	// I don't like this code.....
 	private final String diagnosisNameIndicators[] = { 
-			"병리학적 진단", "병리학적진단", ":병리학적 진단", "병리학적 진단", "외과병리번호 및 진단:", 
+			"Histopathologic Diagnosis", "병리학적 진단", "병리학적진단", ":병리학적 진단", "병리학적 진단", "외과병리번호 및 진단:",
 			"1. 병리학적 진단:", "2. 병리학적 진단:", "3. 병리학적 진단:", "4. 병리학적 진단:" };
 	private final String madiagnosisNameIndicators[] = { "외과병리번호:" };
 	private final String reportIndicator[] = {
@@ -59,8 +59,8 @@ public class ImmunityDocumentParser {
 		
 	private String tableEscapeIndicators[];
 	
-	private final String summaryEscapeIndicators[] = { 
-			"병리학적 진단", "병리번호 및 진단", ":병리학적 진단", "<", "(Addendum", 
+	private final String summaryEscapeIndicators[] = {
+			"Histopathologic Diagnosis", "병리학적 진단", "병리번호 및 진단", ":병리학적 진단", "<", "(Addendum",
 			"((", "면 역 화 학 검 사 보 고 서", "형태계측검사보고서", "분 자 병 리 검 사 보 고 서", 
 			"---", "===", "(Note", "(NOTE", "Note:", "(( Addendum", "면역화학", "면역 화학"};	
 	
@@ -74,8 +74,10 @@ public class ImmunityDocumentParser {
 			"면역화학", "면역 화학", "면 역 화 학 검 사 보 고 서", "형태계측", "형태 계측", "형 태 계 측", "분자병리", "분자 병리", "분 자 병 리 검 사 보 고 서", // reportIndicator
 			"검사 및 판독방법:", "검사 및 판독실", // methodIndicators + checkListIndicators
 			"검사결과", // resultIndicators
+			"IHC Result", // resultIndicators
 			"------------", "=========", // 
 			"검사항목",	// checkListIndicators
+			"Histopathologic Diagnosis",
 			"외과병리번호", "병리학적 진단", "병리번호 및 진단", "진단", "참조", "검사자", "전공의", "* ", "결과", 
 			": Consistent", "- Consistent", "Conclusion", "consistent", "Consistent with", "Consistant with", "Supportive" };	
 	private final String noteEscapeIndicators[] = { 
